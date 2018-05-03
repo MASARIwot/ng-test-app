@@ -1,15 +1,45 @@
-<h1>
-	{{title}}
-</h1>
-<p>Angular 5.x <a href="https://github.com/sketch7/angular-skeleton-app">navigation skeleton project</a> with styling which get you started faster.</p>
-<ul>
-	<li>Angular CLI 1.6 template</li>
-	<li>SCSS for styling</li>
-	<li>Bootstrap 4.x and font awesome</li>
-	<li>Navigation/layout</li>
-	<li>Theming</li>
-</ul>
+<tabs>
+  <tab [tabTitle]="'Tab 1'"  tabLink="?selected1=tab1#/tab1">
+    <ul>
+      <li>Angular CLI 1.6 template</li>
+      <li>SCSS for styling</li>
+      <li>Bootstrap 4.x and font awesome</li>
+      <li>Navigation/layout</li>
+      <li>Theming</li>
+    </ul>
+  </tab>
+  <tab tabTitle="Tab 2" tabLink="?selected2=tab2#/tab2">
+    <h1>
+      {{title}}
+    </h1>
+    <p>Angular 5.x
+      <a href="https://github.com/sketch7/angular-skeleton-app">navigation skeleton project</a> with styling which get you started faster.</p>
+    <p>
+      See other
+      <a routerLink="/projects">open source projects</a> developed.
+    </p>
+  </tab>
+</tabs>
 
-<p>
-	See other <a routerLink="/projects">open source projects</a> developed.
-</p>
+<tabs>
+  <tab [tabTitle]="'Tab 12'"  tabLink="#/tab1?selected1=tab1">
+    <ul>
+      <li>Angular CLI 1.6 template</li>
+      <li>SCSS for styling</li>
+      <li>Bootstrap 4.x and font awesome</li>
+      <li>Navigation/layout</li>
+      <li>Theming</li>
+    </ul>
+  </tab>
+  <tab tabTitle="Tab 22" tabLink="#/tab2?selected2=tab2">
+    <h1>
+      {{title}}
+    </h1>
+    <p>Angular 5.x
+      <a href="https://github.com/sketch7/angular-skeleton-app">navigation skeleton project</a> with styling which get you started faster.</p>
+    <p>
+      See other
+      <a routerLink="/projects">open source projects</a> developed.
+    </p>
+  </tab>
+</tabs>

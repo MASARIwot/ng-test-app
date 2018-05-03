@@ -6,12 +6,17 @@ import { ErrorComponent } from "./error/error.component";
 import { NotFoundComponent } from "./not-found/not-found.component";
 import { ProjectsComponent } from "./projects/projects.component";
 import { ProjectComponent } from "./projects/project.component";
+import { TabComponent } from "./tabs/tab.component";
+import { TabsComponent } from "./tabs/tabs.component";
 
 export const AREAS_ROUTES: Routes = [
-	{ path: "", component: HomeComponent, pathMatch: "full" },
-	{ path: "projects", component: ProjectsComponent },
-	{ path: "error", component: ErrorComponent },
-	{ path: "**", component: NotFoundComponent },
+  { path: "", component: HomeComponent, pathMatch: "full" },
+  { path: "projects", component: ProjectsComponent },
+  { path: "error", component: ErrorComponent },
+  { path: "**", component: NotFoundComponent },
 ];
 
-export const AREAS_COMPONENTS = [HomeComponent, ProjectsComponent, ProjectComponent, NavComponent, ErrorComponent, NotFoundComponent];
+export const AREAS_COMPONENTS = [HomeComponent,
+  ProjectsComponent, ProjectComponent, NavComponent,
+  ErrorComponent, NotFoundComponent,
+  TabComponent, TabsComponent];
